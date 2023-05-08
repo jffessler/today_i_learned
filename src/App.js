@@ -88,6 +88,23 @@ function App() {
   );
 }
 
+function BuiltBy() {
+  return (
+    <p className="message2">
+      Site built by: John Fessler
+      <br></br>
+      <a
+        href="https://www.udemy.com/certificate/UC-10a2e706-f070-4aa5-8808-587e962036ce/"
+        target="_blank"
+        rel="noreferrer"
+        className="source"
+      >
+        (Certificate)
+      </a>
+    </p>
+  );
+}
+
 function Loader() {
   return <p className="message">Loading...</p>;
 }
@@ -229,6 +246,7 @@ function CategoryFilter({ setCurrentCategory }) {
           </li>
         ))}
       </ul>
+      <BuiltBy />
     </aside>
   );
 }
